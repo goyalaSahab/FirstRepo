@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: .\PowerShellCode.Ps1 
+- powershell: Start-Process -Name "Notepad"
   displayName: 'Run a powershell script'
 
 - script: |
