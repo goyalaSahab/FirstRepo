@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- powershell: .\PowerShellCode.Ps1
+- script: .\PowerShellCode.Ps1 
   displayName: 'Run a powershell script'
 
 - script: |
