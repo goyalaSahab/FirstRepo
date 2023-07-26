@@ -6,9 +6,6 @@
 trigger:
 - main
 
-pool:
-  vmImage: windows-latest
-
 steps:
 - powershell: Start-Process -FilePath "Notepad.exe"
   displayName: 'Run a powershell script'
