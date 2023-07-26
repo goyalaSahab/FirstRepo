@@ -7,10 +7,10 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
-- powershell: .\PowershellCode.Ps1
+- powershell: Start-Process -FilePath "Notepad.exe"
   displayName: 'Run a powershell script'
 
 - script: |
