@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo $(Message)
-  displayName: 'Run a one-line script'
+- powershell: .\PowerShellCode.Ps1
+  displayName: 'Run a powershell script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
